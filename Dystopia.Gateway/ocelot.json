@@ -1,15 +1,6 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/tickets/",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        { "Host": "api", "Port": 4951 }
-      ],
-      "UpstreamPathTemplate": "/tickets/",
-      "UpstreamHttpMethod": [ "POST", "PUT", "DELETE" ]
-    },
-    {
       "DownstreamPathTemplate": "/tickets/", 
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -17,6 +8,15 @@
       ],
       "UpstreamPathTemplate": "/tickets/",
       "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/tickets/", 
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        { "Host": "api", "Port": 4951 }
+      ],
+      "UpstreamPathTemplate": "/tickets/",
+      "UpstreamHttpMethod": [ "POST", "PUT", "DELETE" ]
     }
   ],
   "GlobalConfiguration": {
