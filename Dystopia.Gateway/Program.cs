@@ -11,4 +11,4 @@ var app = builder.Build();
 
 app.UseOcelot().Wait();
 
-app.Run();
+app.Run("http://0.0.0.0:5000");
