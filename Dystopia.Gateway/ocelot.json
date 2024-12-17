@@ -6,7 +6,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "api-get",
-          "Port": 4952
+          "Port": 5952
         }
       ],
       "UpstreamPathTemplate": "/tickets/",
@@ -18,7 +18,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "api",
-          "Port": 4951
+          "Port": 5951
         }
       ],
       "UpstreamPathTemplate": "/tickets/",
