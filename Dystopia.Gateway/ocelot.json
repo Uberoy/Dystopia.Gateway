@@ -27,15 +27,20 @@
   ],
   "SwaggerEndPoints": [
     {
-      "Key": "API",
+      "Key": "api",
       "Config": [
         {
-          "Name": "Tickets API",
+          "Name": "API Service",
           "Version": "v1",
           "Url": "http://api:4951/swagger/v1/swagger.json"
-        },
+        }
+      ]
+    },
+    {
+      "Key": "api-get",
+      "Config": [
         {
-          "Name": "Tickets GET API",
+          "Name": "API-GET Service",
           "Version": "v1",
           "Url": "http://api-get:4952/swagger/v1/swagger.json"
         }
