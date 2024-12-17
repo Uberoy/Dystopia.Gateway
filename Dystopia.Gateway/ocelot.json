@@ -1,22 +1,45 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/tickets/", 
+      "DownstreamPathTemplate": "/tickets/",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
-        { "Host": "api-get", "Port": 4952 }
-      ],
-      "UpstreamPathTemplate": "/tickets/",
-      "UpstreamHttpMethod": [ "GET" ]
-    },
-    {
-      "DownstreamPathTemplate": "/tickets/", 
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        { "Host": "api", "Port": 4951 }
+        {
+          "Host": "api",
+          "Port": 4951
+        }
       ],
       "UpstreamPathTemplate": "/tickets/",
       "UpstreamHttpMethod": [ "POST", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/tickets/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "api-get",
+          "Port": 4952
+        }
+      ],
+      "UpstreamPathTemplate": "/tickets/",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "API",
+      "Config": [
+        {
+          "Name": "Tickets API",
+          "Version": "v1",
+          "Url": "http://api:4951/swagger/v1/swagger.json"
+        },
+        {
+          "Name": "Tickets GET API",
+          "Version": "v1",
+          "Url": "http://api-get:4952/swagger/v1/swagger.json"
+        }
+      ]
     }
   ],
   "GlobalConfiguration": {
