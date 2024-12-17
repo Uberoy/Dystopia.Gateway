@@ -23,6 +23,30 @@
       ],
       "UpstreamPathTemplate": "/tickets/",
       "UpstreamHttpMethod": [ "POST", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/rooms/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rooms-api-get",
+          "Port": 4952
+        }
+      ],
+      "UpstreamPathTemplate": "/rooms/",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/rooms/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rooms-api",
+          "Port": 4951
+        }
+      ],
+      "UpstreamPathTemplate": "/rooms/",
+      "UpstreamHttpMethod": [ "POST", "PUT", "DELETE" ]
     }
   ],
   "GlobalConfiguration": {
