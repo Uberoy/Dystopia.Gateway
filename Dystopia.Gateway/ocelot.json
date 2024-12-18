@@ -50,12 +50,7 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:5000",
-    "AllowCors": true, 
-    "CorsPolicy": {
-      "AllowAnyOrigin": true, 
-      "AllowAnyMethod": true, 
-      "AllowAnyHeader": true  
+    "BaseUrl": "http://localhost:5000"
     }
   }
 }
