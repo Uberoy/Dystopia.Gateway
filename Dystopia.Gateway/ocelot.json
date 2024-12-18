@@ -5,7 +5,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "api-get",
+          "Host": "tickets-api-get",
           "Port": 5952
         }
       ],
@@ -17,7 +17,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "api",
+          "Host": "tickets-api",
           "Port": 5951
         }
       ],
@@ -47,7 +47,8 @@
         }
       ],
       "UpstreamPathTemplate": "/rooms/",
-      "UpstreamHttpMethod": [ "POST", "PUT", "DELETE" ]
+      "UpstreamHttpMethod": [ "POST", "PUT", "DELETE", "OPTIONS" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
     }
   ],
   "GlobalConfiguration": {
