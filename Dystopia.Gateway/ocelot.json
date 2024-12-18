@@ -22,7 +22,8 @@
         }
       ],
       "UpstreamPathTemplate": "/tickets/",
-      "UpstreamHttpMethod": [ "POST", "PUT", "DELETE" ]
+      "UpstreamHttpMethod": [ "POST", "PUT", "DELETE", "OPTIONS" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
     },
     {
       "DownstreamPathTemplate": "/rooms/",
