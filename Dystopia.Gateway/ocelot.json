@@ -49,6 +49,30 @@
       "UpstreamPathTemplate": "/rooms/",
       "UpstreamHttpMethod": [ "POST", "PUT", "DELETE", "OPTIONS" ],
       "DangerousAcceptAnyServerCertificateValidator": true
+    },
+    {
+      "DownstreamPathTemplate": "/bookings/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "bookings-api-get",
+          "Port": 7952
+        }
+      ],
+      "UpstreamPathTemplate": "/bookings/",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/bookings/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "bookings-api",
+          "Port": 7951
+        }
+      ],
+      "UpstreamPathTemplate": "/bookings/",
+      "UpstreamHttpMethod": [ "POST", "PUT", "DELETE", "OPTIONS" ]
     }
   ],
   "GlobalConfiguration": {
