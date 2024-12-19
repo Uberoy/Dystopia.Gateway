@@ -80,7 +80,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "customers-api-get",
+          "Host": "customer-api-get",
           "Port": 6952
         }
       ],
@@ -92,7 +92,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "customers-api",
+          "Host": "customer-api",
           "Port": 6951
         }
       ],
