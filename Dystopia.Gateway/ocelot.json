@@ -72,7 +72,33 @@
         }
       ],
       "UpstreamPathTemplate": "/bookings/",
-      "UpstreamHttpMethod": [ "POST", "PUT", "DELETE", "OPTIONS" ]
+      "UpstreamHttpMethod": [ "POST", "PUT", "DELETE", "OPTIONS" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
+    },
+    {
+      "DownstreamPathTemplate": "/customers/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "customers-api-get",
+          "Port": 6952
+        }
+      ],
+      "UpstreamPathTemplate": "/customers/",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/customers/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "customers-api",
+          "Port": 6951
+        }
+      ],
+      "UpstreamPathTemplate": "/customers/",
+      "UpstreamHttpMethod": [ "POST", "PUT", "DELETE", "OPTIONS" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
     }
   ],
   "GlobalConfiguration": {
